@@ -70,7 +70,7 @@ const ProductsItems: React.FC<ProductsItemsProps> = ({ products }) => {
           <p className="text-wrap text-clip text-left w-[290px]">{item.description}</p>
           </div>
           <div className="mt-[10px] flex items-center flex-col">
-          <Link href={`/all-products/${item.id}`} className="">Show Details</Link>
+          <Link href={`/all-products/${item.id}`} className="bg-slate-700 rounded-xl px-[5px] py-[5px] text-white">Show Details</Link>
 
           <AddToCart id={item.id}/>
           </div>

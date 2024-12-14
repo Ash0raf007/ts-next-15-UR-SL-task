@@ -1,13 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['cdn.dummyjson.com'], // Add the domain of the image
+    domains: ["cdn.dummyjson.com"], // Add the domain of the image
   },
   async redirects() {
     return [
       {
-        source: '/',
-        destination: '/all-products',
+        source: "/",
+        destination: "/all-products",
         permanent: true, // Permanent redirect (status code 308)
       },
     ];
